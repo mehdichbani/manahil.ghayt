@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Glow Beauty - Cosmetics Shop</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes scaleIn {
+      from {
+        opacity: 0;
+        transform: scale(0.8);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @keyframes floatGlow {
+      0%, 100% {
+        transform: translateY(0);
+        text-shadow: 0 0 5px #ec4899;
+      }
+      50% {
+        transform: translateY(-8px);
+        text-shadow: 0 0 20px #ec4899;
+      }
+    }
+
+    .fade-in-up {
+      animation: fadeInUp 1s ease-out forwards;
+    }
+
+    .scale-in {
+      animation: scaleIn 0.8s ease-out forwards;
+    }
+
+    .glow-title {
+      animation: floatGlow 3s ease-in-out infinite;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-pink-50 to-white text-gray-800 font-sans">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md p-6 flex justify-between items-center sticky top-0 z-50">
+    <!-- Logo and Brand -->
+    <div class="flex items-center space-x-3 scale-in" style="animation-delay: 0.2s;">
+      <img src="C:\Users\hp\OneDrive\Bureau\vs photo\logo.jpg" alt="Logo" class="h-12 w-12 rounded-full object-cover">
+      <h1 class="text-3xl font-bold text-pink-600 tracking-wide">Glow Beauty</h1>
+    </div>
+    <!-- Navigation -->
+    <nav class="space-x-6 text-base font-medium">
+      <a href="#" class="text-gray-700 hover:text-pink-600 transition">Home</a>
+      <a href="#products" class="text-gray-700 hover:text-pink-600 transition">Products</a>
+      <a href="#contact" class="text-gray-700 hover:text-pink-600 transition">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="text-center py-24 bg-gradient-to-r from-pink-100 to-pink-200">
+    <h2 class="text-5xl font-extrabold mb-4 text-pink-700 glow-title">Enhance Your Natural Beauty</h2>
+    <p class="text-lg mb-6 text-gray-700 fade-in-up" style="animation-delay: 0.3s;">Premium skincare & haircare — crafted for confidence</p>
+    <a href="#products" class="inline-block px-8 py-3 bg-pink-600 text-white rounded-full hover:bg-pink-700 transition duration-300 shadow-lg fade-in-up" style="animation-delay: 0.6s;">
+      Explore Products
+    </a>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="py-20 px-8 bg-white">
+    <h3 class="text-4xl font-bold text-center mb-14 text-pink-700 fade-in-up">Featured Products</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+
+      <!-- Product 1 -->
+      <div class="bg-pink-50 p-6 rounded-3xl shadow-md text-center transform hover:scale-105 transition duration-300 fade-in-up" style="animation-delay: 0.2s;">
+        <img src="C:\Users\hp\OneDrive\Bureau\vs photo\ts1.jpg" alt="Bain Douche" class="mx-auto mb-4 rounded-xl h-48 object-cover">
+        <h4 class="text-2xl font-semibold mb-2 text-pink-700">Bain Douche</h4>
+        <p class="text-gray-600 mb-2">Soothing and refreshing Moroccan body wash</p>
+        <button class="mt-4 bg-pink-500 text-white px-5 py-2 rounded-full hover:bg-pink-600 transition">More Info</button>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="bg-pink-50 p-6 rounded-3xl shadow-md text-center transform hover:scale-105 transition duration-300 fade-in-up" style="animation-delay: 0.4s;">
+        <img src="C:\Users\hp\OneDrive\Bureau\vs photo\ts2.jpg" alt="Shampoo" class="mx-auto mb-4 rounded-xl h-48 object-cover">
+        <h4 class="text-2xl font-semibold mb-2 text-pink-700">Shampoing à base de Kératine</h4>
+        <p class="text-gray-600 mb-2">Strengthens and smooths hair naturally</p>
+        <button class="mt-4 bg-pink-500 text-white px-5 py-2 rounded-full hover:bg-pink-600 transition">More Info</button>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="bg-pink-50 p-6 rounded-3xl shadow-md text-center transform hover:scale-105 transition duration-300 fade-in-up" style="animation-delay: 0.6s;">
+        <img src="C:\Users\hp\OneDrive\Bureau\vs photo\ts3.jpg" alt="Serum" class="mx-auto mb-4 rounded-xl h-48 object-cover">
+        <h4 class="text-2xl font-semibold mb-2 text-pink-700">Sérum Hyaluronique</h4>
+        <p class="text-gray-600 mb-2">Deep hydration and skin plumping effect</p>
+        <button class="mt-4 bg-pink-500 text-white px-5 py-2 rounded-full hover:bg-pink-600 transition">More Info</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-gradient-to-r from-pink-100 to-white py-16 text-center fade-in-up">
+    <h3 class="text-3xl font-bold mb-4 text-pink-700">Get in Touch</h3>
+    <p class="mb-4">contact: 
+      <a href="0624928475 or 0724088344 " class="text-pink-600 underline">0624928475 or 0724088344</a>
+    </p>
+    <p>Follow us on 
+      <a href="https://www.instagram.com/manahil.ghayth" target="_blank" class="text-pink-600 underline">Instagram</a> & 
+      <a href="https://www.tiktok.com/@manahil.ghayth" class="text-pink-600 underline">tiktok</a>
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white text-center p-5 text-sm text-gray-500 border-t">
+    &copy; 2025 Glow Beauty. Website for demo only — all rights reserved.
+  </footer>
+
+</body>
+</html>
